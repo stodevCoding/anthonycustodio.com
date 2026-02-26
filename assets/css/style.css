@@ -1315,6 +1315,15 @@ footer {
   letter-spacing: 0.05em;
 }
 
+.footer-credit {
+  text-align: center;
+  padding: 16px 24px 0;
+  font-size: 0.72rem;
+  color: var(--text-dim);
+  opacity: 0.6;
+  letter-spacing: 0.03em;
+}
+
 /* ---------- LIGHTBOX ---------- */
 .lightbox {
   position: fixed;
