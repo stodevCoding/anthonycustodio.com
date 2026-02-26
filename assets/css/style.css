@@ -582,20 +582,26 @@ body.loaded .hero-bg img {
 }
 
 .hero-cta {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   font-size: 0.8rem;
   font-weight: 500;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--accent);
   padding: 16px 40px;
-  border: 1px solid var(--accent);
-  transition: background 0.4s ease, color 0.4s ease;
+  border: 1px solid rgba(200, 169, 126, 0.3);
+  background: rgba(200, 169, 126, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: background 0.4s ease, color 0.4s ease, border-color 0.4s ease;
 }
 
 .hero-cta:hover {
-  background: var(--accent);
-  color: var(--bg);
+  background: rgba(200, 169, 126, 0.25);
+  border-color: var(--accent);
+  color: var(--accent-light);
 }
 
 .hero-buttons {
@@ -605,18 +611,15 @@ body.loaded .hero-bg img {
 }
 
 .hero-cta-outline {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
   background: rgba(255, 255, 255, 0.08);
   border-color: rgba(255, 255, 255, 0.25);
   color: var(--text);
 }
 
 .hero-cta-outline:hover {
-  background: var(--text);
-  color: var(--bg);
-  border-color: var(--text);
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.5);
+  color: var(--text);
 }
 
 .hero-scroll {
