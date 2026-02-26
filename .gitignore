@@ -2,3 +2,16 @@
 /coiffures/
 /publications/
 *.png
+
+# Build tools
+cv.html
+generate-cv.js
+node_modules/
+package.json
+package-lock.json
+
+# IDE / Env
+.claude/
+.vscode/
+.env
+.env.*
