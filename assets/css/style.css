@@ -994,18 +994,19 @@ section h2 {
   align-items: center;
   gap: 10px;
   margin-top: 28px;
-  padding: 14px 28px;
-  border: 1px solid var(--gold);
-  color: var(--gold);
+  padding: 16px 32px;
+  background: var(--gold);
+  color: var(--bg);
   font-family: var(--font-body);
-  font-size: 0.9rem;
+  font-size: 1rem;
+  font-weight: 500;
   letter-spacing: 0.06em;
   text-decoration: none;
   transition: background 0.3s, color 0.3s;
 }
 
 .cv-download:hover {
-  background: var(--gold);
+  background: #dbbf94;
   color: var(--bg);
 }
 
