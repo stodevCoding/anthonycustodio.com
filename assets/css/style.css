@@ -989,6 +989,26 @@ section h2 {
   line-height: 1.8;
 }
 
+.cv-download {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 28px;
+  padding: 14px 28px;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  transition: background 0.3s, color 0.3s;
+}
+
+.cv-download:hover {
+  background: var(--gold);
+  color: var(--bg);
+}
+
 .contact-info {
   display: flex;
   flex-direction: column;
