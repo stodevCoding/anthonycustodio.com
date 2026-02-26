@@ -734,7 +734,8 @@ section h2 {
   font-weight: 500;
 }
 
-.about-footnote {
+.about-footnote,
+.section-footnote {
   margin-top: 28px;
   padding-top: 20px;
   border-top: 1px solid var(--border-subtle);
