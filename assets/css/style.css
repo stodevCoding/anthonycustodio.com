@@ -608,6 +608,7 @@ body.loaded .hero-bg img {
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .hero-cta-outline {
