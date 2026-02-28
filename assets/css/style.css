@@ -547,7 +547,17 @@ body.loaded .hero-bg img {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--accent);
-  margin-bottom: 24px;
+  margin-bottom: 16px;
+}
+
+.hero-dedication {
+  font-family: var(--font-heading);
+  font-size: clamp(1.1rem, 2.2vw, 1.5rem);
+  font-style: italic;
+  font-weight: 400;
+  color: var(--text-muted);
+  letter-spacing: 0.04em;
+  margin-bottom: 8px;
 }
 
 .hero-content h1 {
