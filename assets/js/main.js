@@ -282,8 +282,32 @@
     }, { passive: true });
   }
 
+  /* ---------- THEME TOGGLE ---------- */
+  function initThemeToggle() {
+    var saved = localStorage.getItem('theme');
+    if (saved) {
+      document.documentElement.setAttribute('data-theme', saved);
+    }
+
+    var toggles = document.querySelectorAll('.theme-toggle');
+    toggles.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var current = document.documentElement.getAttribute('data-theme');
+        var next = current === 'dark' ? 'light' : 'dark';
+        if (next === 'light') {
+          document.documentElement.removeAttribute('data-theme');
+          localStorage.setItem('theme', 'light');
+        } else {
+          document.documentElement.setAttribute('data-theme', 'dark');
+          localStorage.setItem('theme', 'dark');
+        }
+      });
+    });
+  }
+
   /* ---------- INIT ---------- */
   function init() {
+    initThemeToggle();
     initPreloader();
     buildGallery();
     initNavbar();
