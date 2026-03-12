@@ -1351,6 +1351,8 @@ footer {
   color: var(--text-dim);
   letter-spacing: 0.05em;
 }
+.footer-link { color: var(--accent); transition: color 0.3s; }
+.footer-link:hover { color: var(--accent-light); }
 
 .footer-credit {
   text-align: center;
